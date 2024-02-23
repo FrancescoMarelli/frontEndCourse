@@ -1,0 +1,29 @@
+
+* {
+    padding: 0%;
+    margin: 0%;
+}
+body {
+    background: rgb(0, 0, 0);
+    color: bisque;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+.gallery {
+    width: 100%;
+}
+
+.gallery img {
+    vertical-align: top;
+    width: 400px;
+    margin: 20px;
+    padding: 5px;
+    border: 1px solid #484848;
+    opacity: .5;
+}
+
+.gallery img:hover {
+    opacity: 1 solid #fff;
+    opacity: 1;
+}

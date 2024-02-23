@@ -1,0 +1,112 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline:none;
+}
+
+.formulario {
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+.form-group {
+    border: none;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+    background-color: #eaf4f4;
+}
+
+body {
+    font-family: 'Roboto';
+    font-size: 15px;
+}
+
+.contenedor {
+    margin-left: 10px;
+    width: 90%;
+    background-color: #eaf4f4;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.formulario .form-group {
+    width: 100%;
+    margin: auto;
+    background-color: #eaf4f4;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"] {
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 10px;
+    float: center;
+    height: 40px;
+    padding-left: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus {
+    border: none;
+    border-bottom: 2px solid #246eb9;
+}
+
+.formulario .form-group ul {
+    list-style: none;
+    padding: 0px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #cce3de;
+    border-radius: 5px;
+    display: none;
+}
+
+.formulario input[type="radio"] {
+    display: none;
+}
+
+.formulario .sexo {
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+    margin-bottom: 20px; 
+}
+
+.formulario .label-radio {
+   padding: 10px;
+   background-color: #cce3de;
+   border-radius: 5px;
+    width: 49%;
+    text-align: center;
+}
+
+.formulario input[type="radio"]:checked + .label-radio {
+    background-color: #246eb9;
+    color: white;
+}
+
+.formulario .btn {
+    width:100%;
+    border: none;
+    background-color: #246eb9;
+    height: 50px;
+    color: white;
+    border-radius: 0px 0px 10px 10px ;
+    margin-top: 10px;
+    font-family: 'Roboto';
+    font-size: 19px;
+}
+
+.formulario .btn:hover {
+    background-color: #1a4f7f;
+    cursor: pointer;
+}

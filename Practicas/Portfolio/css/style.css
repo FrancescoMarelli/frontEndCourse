@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    outline:none;
+}
+
+body {
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* Cabecera */
+header {
+    background: linear-gradient(#9b999980, rgba(206, 203, 203, 0.4)), url(../img/landscape.jpg) no-repeat center center/cover;
+    color: #fff;
+    padding: 10px 0;
+    height: 500px;
+}
+
+header .menu {
+    margin: 40px 0px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+header .menu a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    margin: auto 10px;
+}
+
+header .menu a:hover {
+    border-bottom: 3px solid #fff;
+    font-weight: 700;
+}
+
+
+/* Firma */
+header .container .text-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+}
+
+header .container .text-container .texto {
+    border:2px solid rgba(241, 241, 241, 0.5);
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+
+header .container .text-container .texto h1,
+header .container .text-container .texto h2 {
+    font-weight: 300;
+    margin: 0;
+}
+
+header .container .text-container .texto .francesco {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.main .container {
+    text-align: center;
+    overflow: visible;
+}
+
+
+/* About */
+.main .container .about .texto h3 {
+    font-size:30px;
+    font-weight: 500;
+    color:rgba(46, 46, 46, 0.4)
+}
+
+.main .container .about .foto {
+    margin-top: -110px;
+}
+
+.main .container .about .foto img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    margin: 20px 0;
+    border: 2px solid #fff;
+    border-top: 2px transparent #ffffff2c;
+}
+
+
+/* Trabajos */
+.main .work-container{
+    padding: 60px 0;
+    background: #f2f2f2;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+.main .works .work-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 1000px;
+}
+
+.main .works .work-container .work {
+    width: 23%;
+}
+
+.main .works .work-container .work  .thumb{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.main .works .work-container .work  .thumb img{
+    width: 100%;
+   vertical-align: top;
+}
+
+.main .works .work-container .work .desc { 
+    text-align: center;
+}
+
+.main .works .work-container .work .name { 
+    font-weight: 700;
+    color:#1a2c5d80;
+}
+
+.main .works .work-container .work .category { 
+    font-weight: 700;
+    color:#17389280;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.main .container .titulo{
+    font-size: 30px;
+}
+
+/* Formulario */
+
+footer {
+    background: #1a2c5d7c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+
+}
+
+footer .contact .container h3{
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 40px;
+
+}
+    
+footer .contact .container {
+    padding: 20px;
+    border: #dadde580 2px solid;
+    border-radius: 10px;
+}
+
+footer .contact .formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; 
+}
+
+footer .contact .formulario input[type="text"],
+footer .contact .formulario input[type="email"],
+footer .contact .formulario textarea {
+    border: 2px solid #dadde580;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px 0;
+}
+
+footer .contact .formulario input[type="text"]:hover,
+footer .contact .formulario input[type="email"]:hover,
+footer .contact .formulario textarea:hover {
+   border-radius: 5px;
+   border-color: #17389280;   
+}
+
+footer .contact .container .formulario input[type="text"]::placeholder,
+footer .contact .container .formulario input[type="email"]::placeholder,
+footer .contact .container .formulario textarea::placeholder {
+    text-align: center;
+}
+
+footer .contact .container .formulario textarea {
+    width: 100%;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+    margin-bottom: 20px;
+
+}
+
+footer .contact .container .formulario .boton{
+    border: none;
+    background: #17389280;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: auto;
+}
+
+footer .contact .container .formulario .boton:hover{
+    border: none;
+    font-size: 20px;
+    background: #1a2c5d;
+    transition: all 0.2s ease-in-out;    
+}
+
+footer .contact .container .formulario input[type="text"],
+footer .contact .container .formulario input[type="email"]{
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+/* Social */
+/* Me cago en to no consigo que funcionen los iconos no se que hago mal no se ven los iconos hijos de puta */
+
+footer .social{
+    background: #14224a;
+}
+
+footer .social .container a {
+    color: #fff;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    padding-bottom: 20px;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+    margin: auto 10px;
+}
+
+@media screen and (max-width: 800px) {
+    header .menu {
+        text-align: center;
+    }
+
+    .main .works .work-container {
+        width: 100%;
+    }
+
+    .main .works .container .work-container .work {
+        width: 46%;
+    }
+
+    
+}

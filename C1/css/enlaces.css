@@ -1,0 +1,23 @@
+a {
+    color: rgb(39, 7, 220);
+    text-decoration: none;
+    
+}
+
+a:hover {
+    color: rgb(215, 16, 66);
+    background-color: rgb(240, 240, 240);
+}
+
+a:visited {
+    color: rgb(13, 10, 26);
+}
+
+a:active{
+    color: rgb(215, 16, 66);
+    background-color: rgb(240, 240, 240);
+}
+
+body {
+    background-color: rgb(223, 213, 174);
+}

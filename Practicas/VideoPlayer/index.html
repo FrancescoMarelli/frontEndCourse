@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+
+        <title>Video Player</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet">
+
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="video-js.css">
+        <script src="videoPlayer.js"></script>
+
+    </head>
+    <body>
+        <header>
+            <h1 class="titulo">Lorem Ipsum Video</h1>
+        </header>
+        <main>
+            <div class="video-container">
+                <!-- no puedo usar vjs-16-9 -->
+                <video class="fm-video video-js vjs-16-9 vjs-big-play-centered" controls data-setup="{}" id="fm-video">
+                    <source src="keyboard.mp4" type="video/mp4">
+                </video>
+                <article>
+                    <h2>Lorem Ipsum</h2>
+                    <p>Lorem ipsum dolor sit </p>
+                </article>
+            </div>
+        </main>
+        <script>
+        var reproductor = videojs('fm-video', {
+            fluid: true
+
+        });
+        </script>
+        
+    </body>
+</html>

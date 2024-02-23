@@ -1,0 +1,415 @@
+body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size:16px;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+
+}
+
+.container {
+    width: 90%;
+    overflow: hidden;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* ----------- Header ---------*/
+header {
+    background: url('../img/nick-hillier-xBXF9pr6LQo-unsplash.jpg') ;
+    background-color: #ababab;
+    background-size: cover;
+    opacity: 0.5;
+    color: #fff;
+    width: 100% ;
+    background-attachment: fixed;
+    background-position: center 0;
+}
+
+
+header .container {
+    height: 700px ;
+    position: relative;
+}
+
+header .menu {
+    text-align: right;
+    width: 100%;
+}
+
+header .menu .container a{
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    margin: 40px 20px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.5s ease-in-out;
+    font-weight: 100;
+    float: right;
+    
+}
+
+header .menu .container a:hover{
+    font-size: 28px;
+    border-bottom: 3px solid #fff;
+
+}
+
+header .title {
+    text-align: left;
+    padding-left: 400px;
+    width: 100%;
+    position: absolute;
+    top : 50%;
+    margin-top: -200px;
+}
+
+header .title .name {
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 100;
+}
+
+header .title .name span {
+    font-size: 60px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+header .title h3 {
+    font-size: 30px;
+    font-weight: 100;
+    font-style: italic;
+}
+
+/* ------ Main  ------ */
+
+.main {
+    background: url('../img/pattern.webp');
+    background-repeat: repeat;
+}
+
+.main .acerca-de .container {
+    overflow: visible;
+    position: relative;
+}
+
+.main .acerca-de .foto {
+    width: 80%;
+    position: absolute;
+    top: -100px;
+    left: 0;
+    z-index: 0;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.35);
+}
+
+.main .acerca-de .foto img {
+    vertical-align: top;
+    width: 100%;
+}
+
+
+.main .acerca-de article {
+    background: #fff;
+    position: relative;
+    width: 50%;
+    z-index: 1;
+    top: 250px;
+    float: right;
+    padding: 40px;
+    border:2px solid rgba(241, 241, 241, 0.5);
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.35);   
+}
+
+
+.main  .menu {
+    padding-top: 570px;
+    margin-bottom: 50px;
+}
+
+.main .menu .title {
+    font-size: 35px;
+    font-weight: 100;
+    font-style: italic;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main .menu .container-menu,
+.main .menu .container-menu-ext {
+    border: 2px solid rgba(241, 241, 241, 0.5);
+    background: transparent;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.main .menu article{
+    width: 40%;
+    padding: 20px;
+    float: left;
+}
+
+.main .menu .categoria {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 40px;
+}
+
+.main .menu .plates {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 4px dotted rgba(87, 87, 87, 0.5);
+    overflow: hidden;
+}
+
+.main .menu .name {
+    font-size: 20px;
+    margin-bottom: 20px;
+    float: left;
+}
+
+.main .menu .price {
+    font-size: 20px;
+    font-weight: 500;
+    float: right;
+}
+
+.main .menu .desc {
+    font-size: 15px;
+    color: #7a7a7a;
+    font-style: italic;
+    font-weight: 100;
+    margin-top: 20px;
+    clear: both;
+}
+
+/* Galeria */
+
+.main .galeria {
+    overflow: hidden;
+
+}
+
+.main .galeria .container  {
+    width: 25%;
+    float: left;
+}
+
+.main .galeria .container img {
+    width: 100%;
+    vertical-align: top;
+    opacity: .7;
+}
+.main .galeria .container img:hover {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+/* ------ Ubicacion ------ */
+
+.main .ubicacion {
+    background: #f6f6f6;
+    color: #000000;
+    padding: 50px 0;
+    overflow: hidden;
+}
+
+.main .ubicacion .title {
+    text-align: center;
+    font-weight: 300;
+    line-height: 40px;
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+.main .ubicacion .container .direccion {
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+
+.main .ubicacion .container .direccion .calle{
+    margin-bottom: 20px;
+}
+
+.main .ubicacion .container .horario {
+    width: 50%;
+    float: right;
+    text-align: right;
+    font-weight: 300;
+}
+
+.main .ubicacion .container .horario h3 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.main .ubicacion .container .horario .entre-semana {
+    text-align: left;
+    float: left;
+    width: 50%;
+}
+
+.main .ubicacion .container .horario .finde {
+    text-align: right;
+    float: right;
+    width: 50%;
+}
+
+/* ------ Mapa ------ */
+
+.main .mapa {
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.main .mapa iframe {
+    width: 100%;
+    max-height: 600px;  
+    border: 0; 
+}
+
+
+/* ------ Footer ------ */
+footer {
+    background: #ffffff;
+    color: #000000;
+    padding: 50px 0;
+    overflow: hidden;
+    text-align: center;
+    margin-top: -4px;
+}
+
+/** Media Queries **/
+@media screen and (max-width: 800px) {
+    header .container{
+        position:static;
+        height: auto;
+    }
+
+    header .title {
+        position: static;
+        margin:  0;
+        padding: 100px;
+        float: center;
+        text-align: center;
+    }
+
+    header .menu .container {
+        text-align: center;
+        float: center;
+    }
+
+    header .menu .container  a {
+        margin: 10px 20px;
+        font-size: 19px;
+    }
+
+    header .title .name {
+        font-size: 20px;
+    }
+
+    header .title h3 {
+        font-size: 18px;
+    }
+
+    .main .acerca-de .foto  {
+        width: 100%;
+        position: relative;
+        float: center;
+    }
+
+    .main .acerca-de article{
+        width: auto;
+        min-width: auto;
+        max-width: auto;
+        float: center;
+        position: relative;
+        top: -100px;
+        transform: translate(0px,0);
+    }
+
+    .main .menu {
+        padding-top: 300px;
+    }
+
+    .main .menu article {
+        width: 100%;
+
+    }
+
+    .main .menu article .price {
+        padding-right: 40px;
+    }
+
+    .main .mapa {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .main .ubicacion .container .horario,
+    .main .ubicacion .container .direccion {
+        width: 100%;
+        text-align: center;
+        float: center;
+    }
+
+    .main .ubicacion .container .horario .finde,
+    .main .ubicacion .container .horario .entre-semana{
+        text-align: center;
+        float: center;
+        width: 100%;
+    }
+
+    .main .galeria .container {
+        width: 100%; /* Cambiar el ancho para ocupar toda la pantalla */
+        float: none; /* Quitar el flotado para que las imágenes se coloquen una encima de la otra */
+    }
+
+    .main .galeria .container img {
+        width: 100%; /* Ajustar el ancho de las imágenes para que ocupen todo el ancho del contenedor */
+        display: block; /* Cambiar la visualización de las imágenes a bloque para que se coloquen una encima de la otra */
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .main .mapa {
+        width: 100%;
+    }
+
+    .main .mapa iframe {
+        width: 100%;
+    }
+
+    header .menu .container {
+        text-align: center;
+        float: center;
+    }
+
+    header .menu .container  a {
+        margin: 10px 20px;
+        font-size: 15px;
+    }
+
+    .main .menu .name {
+        width: 100%;
+        font-size:20px;
+    }
+
+    .main .menu .desc{
+        width: 100%;
+        font-size: 15px;
+    } 
+
+    .main .menu .price {
+        width: 100%;
+        font-size: 10px;
+        padding-right: 0px;
+    }
+    
+    
+}

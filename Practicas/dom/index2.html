@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM Events</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <!-- <button onclick="ok()"> OK </button> -->
+    <button id="btn">OK</button>
+    <script>
+        function ok(){
+            alert('ok');
+        }
+        var okb= document.getElementById('btn');
+        okb.addEventListener('click', ok);
+        //okb.addEventListener('mouseover',ok);
+
+    </script>
+</body>
+
+</html>

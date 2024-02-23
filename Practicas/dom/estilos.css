@@ -1,0 +1,12 @@
+
+.caja {
+    background-color: #53c053;
+    font: bold 20px/50px Arial, sans-serif;
+    color: aliceblue;
+    text-align: center;
+    padding: 20px;
+    width: 200px;
+    height: 50px;
+    border: 1px solid #ffffff;
+    margin: 10px;
+}

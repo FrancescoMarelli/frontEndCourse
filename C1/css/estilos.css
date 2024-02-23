@@ -1,0 +1,19 @@
+h1 {
+    color:red
+}
+
+div p {
+    color:blue
+}
+
+.parrafo {
+    color:rgb(10, 235, 10)
+}
+
+.link {
+    color:rgb(186, 186, 11)
+}
+
+#link {
+    font-size: 20px;
+}

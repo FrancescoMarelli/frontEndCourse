@@ -1,0 +1,16 @@
+.texto {
+    text-shadow: 2px 2px 3px #594f4f;
+    color: #592715;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.caja {
+    box-shadow: 0px 1px 2px #cfacac;
+    width: 200px;
+    height: 200px;
+    background: blue;
+}
+*::selection {
+    background: #f00;
+    color: #fff;
+}

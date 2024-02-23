@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="contenedor" id="contenedor">
+        <form action="" class="formulario" id="formulario" name="formulario">
+            <div class="form-group">
+                <input type="text" class="input" name="nombre" placeholder="Nombre">
+                <input type="email" class="input" name="correo" placeholder="Correo">
+
+                <div class="sexo">
+                    <input type="radio" class="sexo" id="hombre" name="sexo" >
+                    <label for="hombre" class="label-radio">Hombre</label>
+                    <input type="radio" class="sexo" id="mujer" name="sexo" >
+                    <label for="mujer" class="label-radio">Mujer</label>
+                </div>
+
+                <div class="terminos">
+                    <input type="checkbox" class="terminos" id="terminos">
+                    <label for="terminos" class="terminos">Terminos y condiciones</label>
+                </div>
+
+                <ul class="error" id="error"></ul>
+            </div>
+            <input type="submit" class="btn" value="Registrate">
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
